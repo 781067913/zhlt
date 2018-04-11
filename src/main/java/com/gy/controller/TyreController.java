@@ -30,7 +30,7 @@ public class TyreController {
 
     @ApiOperation(value="车胎入总库", notes="输入车胎frid，批次号batch，车胎种类type，车胎规格spec，车胎是否合格status(1合格，0不合格)等信息")
     @PostMapping(value = "/tyrerzk")
-    public ResultObject tyreRzk(@RequestParam(value = "tyreId") String tyreId,@RequestParam(value = "batch") String batch,@RequestParam(value = "type") String type,@RequestParam(value = "spec") String spec,@RequestParam(value = "brand") String brand,@RequestParam(value = "status",required = false) String status,@RequestParam("token") String token){
+    public ResultObject tyreRzk11(@RequestParam(value = "tyreId") String tyreId,@RequestParam(value = "batch") String batch,@RequestParam(value = "type") String type,@RequestParam(value = "spec") String spec,@RequestParam(value = "brand") String brand,@RequestParam(value = "status",required = false) String status,@RequestParam("token") String token){
         Tyre t = new Tyre();
         t.setId(tyreId);
         t.setBatch(batch);
