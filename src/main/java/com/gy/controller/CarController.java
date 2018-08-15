@@ -35,6 +35,7 @@ public class CarController {
         ResultObject ro = new ResultObject();
         List<Car> list = carService.findCarByCarNo(carNo);
         ro.setData(list);
+		int a =1;
         ro.setMessage(Constant.RESULT_MESSAGE_SUCCESS);
         ro.setCode(Constant.RESULT_CODE_SUCCESS);
         return ro;
